@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+html {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  height: 100%;
+  background-color: hsl(185, 41%, 84%);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 304px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: hsl(186, 14%, 43%);
+  font-size: 400;
+  font-size: 24px;
+  max-width: 100px;
+  letter-spacing: 10px;
+  margin-top: 87px;
+  margin-left: 10px;
+}
+
+.calculator-container {
+  width: 858px;
+  height: 418px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 31px;
+}
+
+.order-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.result-container {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-title {
+  color: hsl(186, 14%, 43%);
+}
+
+.percent-container {
+  margin-top: 43px;
+}
+
+.people-container {
+  margin-top: 35px;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.percent-btn {
+  width: 117px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  font-size: 24px;
+  margin: 6px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.percent-btn:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: white;
+}
+
+#bill-input,
+#people-input {
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 24px;
+  height: 46px;
+  border-radius: 5px;
+  color: hsl(185, 41%, 84%);
+  cursor: pointer;
+  width: 375px;
+  margin-top: 3px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+#custom-input {
+  width: 117px;
+  height: 46px;
+  border: none;
+  color: hsl(186, 14%, 43%);
+  border-radius: 5px;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 24px;
+  text-align: center;
+  margin: 6px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.amount-container {
+  display: flex;
+  justify-content: space-between;
+  width: 332px;
+}
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  width: 332px;
+  margin-top: 25px;
+  margin-bottom: 123px;
+}
+
+.result-name {
+  color: white;
+  font-size: 1em;
+  margin-top: 18px;
+}
+.result-baseline {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.8em;
+}
+
+.result-number {
+  color: rgba(32, 194, 172, 255);
+  font-size: 3em;
+}
+
+.reset-btn {
+  background-color: #0c686d;
+  color: hsl(183, 100%, 15%);
+  border: none;
+  font-size: 1.2em;
+  height: 50px;
+  border-radius: 4px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.reset-btn:hover {
+  background-color: white;
+  color: #0c686d;
+}
+
+footer {
+  margin-top: 120px;
+}
+
+@media only screen and (max-width: 480px) {
+  .calculator-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .order-container {
+    width: 90%;
+  }
+  .result-container {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+
+  #bill-input,
+  #people-input {
+    width: 100%;
+  }
+
+  .btn-container {
+    justify-content: space-around;
+  }
+
+  .percent-btn {
+    width: 150px;
+  }
+  #custom-input {
+    width: 150px;
+  }
+
+  .amount-container,
+  .total-container {
+    margin: 15px auto;
+  }
+
+  .reset-btn {
+    width: 70%;
+    margin: 35px auto;
+  }
+}

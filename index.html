@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1000px)"
+      href="style-desktop.css"
+      type="text/css"
+    />
+    <link href="integration-tools.css" rel="stylesheet" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="title-container">
+          <h1>
+            Spli <br />
+            tter
+          </h1>
+        </div>
+      </header>
+      <main>
+        <div class="calculator-container">
+          <div class="order-container">
+            <div class="bill-container">
+              <div class="order-title">Bill</div>
+              <input type="number" id="bill-input" />
+            </div>
+
+            <div class="percent-container">
+              <div class="order-title">Select Tip %</div>
+              <div class="btn-container">
+                <button class="percent-btn">5%</button>
+                <button class="percent-btn">10%</button>
+                <button class="percent-btn">15%</button>
+                <button class="percent-btn">25%</button>
+                <button class="percent-btn">50%</button>
+                <input type="text" placeholder="Custom" id="custom-input" />
+              </div>
+            </div>
+
+            <div class="people-container">
+              <div class="order-title">Number of People</div>
+              <input type="number" id="people-input" />
+            </div>
+          </div>
+
+          <div class="result-container">
+            <div class="amount-container">
+              <div class="result-info">
+                <div class="result-name">Tip Amount</div>
+                <div class="result-baseline">/ person</div>
+              </div>
+              <div class="result-number">$0.00</div>
+            </div>
+
+            <div class="total-container">
+              <div class="result-info">
+                <div class="result-name">Total</div>
+                <div class="result-baseline">/ person</div>
+              </div>
+              <div class="result-number">$0.00</div>
+            </div>
+
+            <button class="reset-btn">RESET</button>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">NycoChavanoud</a>.
+        </div>
+      </footer>
+    </div>
+
+    <!-- <script src="integration-tools.js"></script>
+    <script>
+      initSlider({ img: "/design/desktop-design-empty.jpg" });
+    </script> -->
+  </body>
+</html>
