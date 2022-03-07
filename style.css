@@ -15,3 +15,137 @@ body {
   background-color: hsl(185, 41%, 84%);
   height: 100vh;
 }
+
+header {
+  width: 100%;
+  height: 304px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: hsl(196, 14%, 43%);
+  font-size: 24px;
+
+  margin-top: 87px;
+  letter-spacing: 10px;
+}
+
+.calculator-container {
+  width: 858px;
+  height: 418px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 31px;
+}
+
+.order-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.result-container {
+  background-color: hsl(183, 100%, 15%);
+  padding: 40px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-title {
+  color: hsl(186, 14%, 43%);
+}
+
+#bill-input,
+#people-input {
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 24px;
+  height: 46px;
+  border-radius: 5px;
+  color: hsl(185, 41%, 84%);
+  cursor: pointer;
+  width: 375px;
+  margin-top: 3px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+.percent-btn {
+  width: 117px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.6s;
+  margin: 6px;
+}
+
+.percent-btn:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: white;
+}
+
+#custom-input {
+  width: 117px;
+  height: 50px;
+  border: none;
+  color: hsl(186, 14%, 43%);
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  margin: 6px;
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.percent-container {
+  margin-top: 43px;
+}
+
+.people-container {
+  margin-top: 35px;
+}
+
+.amount-container {
+  display: flex;
+  justify-content: space-between;
+  width: 332px;
+}
+
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  width: 332px;
+  margin-top: 25px;
+}
+
+.result-name {
+  color: white;
+  font-size: 1em;
+  margin-top: 18px;
+}
+.result-baseline {
+  color: hsl(186, 14%, 43%);
+  font-size: 0.8em;
+}
